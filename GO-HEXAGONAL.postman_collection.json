@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "8051c03f-aef8-4d18-99e4-fd859ea70632",
+		"name": "GO-HEXAGONAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31594625",
+		"_collection_link": "https://orange-eclipse-186344.postman.co/workspace/My-Workspace~b96844f9-e3fe-4d08-8448-5c75a96c0b0d/collection/31594625-8051c03f-aef8-4d18-99e4-fd859ea70632?action=share&source=collection_link&creator=31594625"
+	},
+	"item": [
+		{
+			"name": "Alumno",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjM2NDkwODUsInN1YiI6IjAyNDU3ZTJkLTg4N2YtNDdmYS04MzA0LTg3MTlkMGQ5NmY1YyJ9.h5V_Gw8myJxOGWUEjbegTzTRy947ax9Vy-rIYRZWlWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/alumnos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alumnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjM2NDkwODUsInN1YiI6IjAyNDU3ZTJkLTg4N2YtNDdmYS04MzA0LTg3MTlkMGQ5NmY1YyJ9.h5V_Gw8myJxOGWUEjbegTzTRy947ax9Vy-rIYRZWlWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/alumnos/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alumnos",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjM2NDkwODUsInN1YiI6IjAyNDU3ZTJkLTg4N2YtNDdmYS04MzA0LTg3MTlkMGQ5NmY1YyJ9.h5V_Gw8myJxOGWUEjbegTzTRy947ax9Vy-rIYRZWlWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"john\",\r\n  \"edad\": 19,\r\n  \"grupo\": \"A\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/alumnos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alumnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/alumnos/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alumnos",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Maestro",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/maestros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"maestros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/maestro/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"maestro",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Petronilo\",\r\n  \"email\": \"johndoe@example.com\",\r\n  \"password\": \"yourpassword\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/maestro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"maestro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/maestro/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"maestro",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

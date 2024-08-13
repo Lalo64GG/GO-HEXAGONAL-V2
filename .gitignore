@@ -1,0 +1,18 @@
+# Binarios generados por Go
+*.exe
+*.out
+*.o
+
+# Dependencias locales
+/vendor/
+
+# Archivos de configuración local
+.env
+
+# Archivos del editor
+.vscode/
+.idea/
+
+# Archivos de log y temporales
+*.log
+*.tmp
